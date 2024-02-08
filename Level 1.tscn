@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhnb8xlu6rwtl"]
+
+[ext_resource type="PackedScene" uid="uid://cuf038liygrk5" path="res://Platform.tscn" id="1_1uc75"]
+[ext_resource type="PackedScene" uid="uid://dqnhbjgtdfw3r" path="res://Player.tscn" id="2_4hiko"]
+
+[node name="Level 1" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.439598, -1.70107)
+
+[node name="Platform" parent="." instance=ExtResource("1_1uc75")]
+transform = Transform3D(1.8567, 0, 0, 0, 1, 0, 0, 0, 2.05427, 0, -0.125168, 0)
+
+[node name="Platform2" parent="." instance=ExtResource("1_1uc75")]
+transform = Transform3D(0.959143, 0, 0, 0, 0.959143, 0, 0, 0, 0.959143, -1.5517, -0.125168, 0)
+
+[node name="Player" parent="." instance=ExtResource("2_4hiko")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.217898, 0)
